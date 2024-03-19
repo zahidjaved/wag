@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* FONTS STARTS */
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Black.woff2') format('woff2'),
+    url('../fonts/WorkSans-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Bold.woff2') format('woff2'),
+    url('../fonts/WorkSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-ExtraBold.woff2') format('woff2'),
+    url('../fonts/WorkSans-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-ExtraLight.woff2') format('woff2'),
+    url('../fonts/WorkSans-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Light.woff2') format('woff2'),
+    url('../fonts/WorkSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Medium.woff2') format('woff2'),
+    url('../fonts/WorkSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Regular.woff2') format('woff2'),
+    url('../fonts/WorkSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-SemiBold.woff2') format('woff2'),
+    url('../fonts/WorkSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Thin.woff2') format('woff2'),
+    url('../fonts/WorkSans-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* banner css */
+.banner {
+  background: #F5F5F5;
+  background-image: url(../img/banner-bg.png);
+  padding: 180px 0px 75px;
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  background-position: top right 0px;
+}
+
+.banner-wheel-image {
+  max-width: 753px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.banner-particales-image {
+  max-width: 679px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* experience css */
+.experience {
+  background: #F5F5F5;
+  background-image: url(../img/experience-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 100px right 0px;
+}
+
+.experience-contents {
+  padding-right: 79px;
+  margin-bottom: 129px;
+}
+
+.experience-contents h2 {
+  font-family: 'Work Sans';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 47px;
+}
+
+.experience-contents p {
+  font-family: 'Work Sans';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+}
+
+/* about cards css */
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 188px;
+  margin-bottom: 38px;
+}
+
+.about-card {
+  max-width: 432px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  border: none;
+  background: #FFFFFF;
+  padding: 59px 41px 45px;
+  border-radius: 16px;
+}
+
+.card img {
+  width: 113px;
+  margin-bottom: 16px;
+  margin-left: 12px;
+}
+
+.card-title {
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000;
+  margin-bottom: unset;
+}
+
+.card-text {
+  font-family: "Work Sans";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  min-height: 180px;
+}
+
+
+/* All media screen  */
+
+/* Extra large devices (large laptops and desktops, 1440 and up) */
+
+@media only screen and (max-width: 1440) {
+  .banner {
+    background-size: 100% 91%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1366px and up) */
+
+@media only screen and (max-width: 1366px) {
+  .experience-contents h2 {
+    font-size: 34px;
+  }
+
+  .about-cards {
+    padding: 0px 100px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+
+@media only screen and (max-width: 1280px) {
+  .banner {
+    background-size: 100% 92%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+
+@media only screen and (max-width: 1199px) {
+
+  .banner {
+    background-size: 100% 91%;
+  }
+
+  .experience-contents {
+    padding-right: 72px;
+    margin-bottom: 101px;
+  }
+
+  .experience-contents h2 {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 31px;
+  }
+
+  .experience-contents p {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .about-cards {
+    padding: 0px 25px;
+  }
+
+  .about-card {
+    max-width: 426px;
+  }
+
+  .card {
+    padding: 59px 40px 45px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    line-height: 38px;
+  }
+
+  .card-text {
+    font-size: 18px;
+    line-height: 27px;
+    min-height: 159px;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+
+@media only screen and (max-width: 1024px) {
+  .experience {
+    background: #F5F5F5;
+    background-image: url(../img/experience-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .experience-contents h2 {
+    font-size: 27px;
+    line-height: 33px;
+    margin-bottom: 25px;
+  }
+
+  .experience-contents {
+    padding-right: 50px;
+    margin-bottom: 97px;
+  }
+
+  .about-cards {
+    margin-bottom: 33px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (max-width: 992px) {
+  .about-card {
+    max-width: 422px;
+  }
+
+  .card {
+    padding: 58px 38px 45px;
+  }
+}
+
+/* Large devices (laptops/desktops, 991px and up) */
+
+@media only screen and (max-width: 991px) {
+  .banner-particales-image {
+    max-width: 640px;
+  }
+
+  .experience {
+    background-position: inherit;
+  }
+
+  .experience-contents {
+    padding-right: 0px;
+    margin-bottom: 72px;
+  }
+
+  .experience-image {
+    margin-bottom: 97px;
+  }
+
+  .about-cards {
+    padding: 0px 0px;
+    margin-bottom: 22px;
+
+  }
+
+  .about-card {
+    max-width: 344px;
+  }
+
+  .card {
+    padding: 52px 20px 45px;
+  }
+
+  .card img {
+    width: 104px;
+    margin-bottom: 27px;
+    margin-left: 10px;
+  }
+
+  .card-title {
+    font-size: 17px;
+    line-height: 37px;
+  }
+
+  .card-text {
+    font-size: 17px;
+    line-height: 25px;
+    min-height: 149px;
+  }
+}
+
+/* Medium devices (landscape tablets, 834px and up) */
+
+@media only screen and (max-width: 834px) {
+  .banner {
+    background-size: 100% 87%;
+  }
+
+  .banner-wheel-image {
+    max-width: 650px;
+  }
+
+  .banner-particales-image {
+    max-width: 568px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .banner-wheel-image {
+    max-width: 615px;
+  }
+
+  .banner-particales-image {
+    max-width: 530px;
+  }
+
+  .experience-image {
+    text-align: center;
+  }
+
+  .experience-image img {
+    width: 85%;
+  }
+}
+
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (max-width: 767px) {
+  .banner-particales-image {
+    max-width: 470px;
+  }
+
+  .experience {
+    background-position: center;
+  }
+
+  .experience-contents {
+    margin-bottom: 67px;
+    text-align: center;
+  }
+
+  .experience-contents h2 {
+    font-size: 25px;
+    line-height: 31px;
+    margin-bottom: 23px;
+  }
+
+  .experience-contents p {
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  .about-cards {
+    justify-content: center;
+    margin-bottom: 2px;
+  }
+
+  .about-card {
+    max-width: 444px;
+    margin-bottom: 36px;
+  }
+}
+
+/* Medium devices (landscape tablets, 640px and up) */
+
+@media only screen and (max-width: 640px) {
+  .banner {
+    background-size: 100% 86%;
+  }
+
+  .banner-wheel-image {
+    max-width: 500px;
+  }
+
+  .banner-particales-image {
+    max-width: 420px;
+  }
+
+  .experience-contents h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 23px;
+  }
+
+  .card {
+    padding: 52px 20px 38px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 600px) {
+  .banner-wheel-image {
+    max-width: 452px;
+  }
+
+  .banner-particales-image {
+    max-width: 395px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 540px and up) */
+
+@media only screen and (max-width: 540px) {
+  .banner {
+    background-size: 100% 85%;
+  }
+
+  .banner-wheel-image {
+    max-width: 423px;
+  }
+
+  .banner-particales-image {
+    max-width: 363px;
+  }
+
+  .experience-contents h2 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 23px;
+  }
+
+  .experience-contents p {
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .experience-image img {
+    width: 80%;
+  }
+
+  .card {
+    padding: 52px 23px 38px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 480px and up) */
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    background-size: 100% 84%;
+  }
+
+  .banner-wheel-image {
+    max-width: 360px;
+  }
+
+  .banner-particales-image {
+    max-width: 326px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 428px and up) */
+@media only screen and (max-width: 428px) {
+
+  .banner-wheel-image {
+    max-width: 328px;
+  }
+
+  .banner-particales-image {
+    max-width: 297px;
+  }
+
+  .experience-contents {
+    margin-bottom: 48px;
+  }
+
+  .experience-contents h2 {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+
+  .experience-contents p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .experience-image {
+    margin-bottom: 84px;
+  }
+
+  .experience-image img {
+    width: 78%;
+  }
+
+  .about-card {
+    max-width: 370px;
+    margin-bottom: 30px;
+  }
+
+  .card img {
+    width: 97px;
+    margin-bottom: 24px;
+    margin-left: 10px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 400px and up) */
+
+@media only screen and (max-width: 400px) {
+  .banner {
+    background-size: 100% 82%;
+    padding: 51px 0px 72px;
+  }
+
+  .banner-wheel-image {
+    max-width: 302px;
+  }
+
+  .banner-particales-image {
+    max-width: 281px;
+  }
+
+  .experience-contents h2 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 19px;
+  }
+
+  .experience-contents p {
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  .about-card {
+    max-width: 345px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  .card-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 360px and up) */
+
+@media only screen and (max-width: 360px) {
+  .banner-wheel-image {
+    max-width: 281px;
+  }
+
+  .banner-particales-image {
+    max-width: 255px;
+  }
+
+  .experience-contents {
+    margin-bottom: 46px;
+    padding: 0 3px;
+  }
+
+  .about-card {
+    max-width: 320px;
+  }
+
+  .card {
+    padding: 46px 19px 35px;
+  }
+
+  .card img {
+    width: 95px;
+    margin-bottom: 21px;
+    margin-left: 10px;
+  }
+}
+
+/*  extra small Mobile devices( extra small Mobile devices, 320px and up) */
+
+@media only screen and (max-width: 320px) {
+  .banner {
+    background-size: 100% 81%;
+  }
+
+  .banner-wheel-image {
+    max-width: 248px;
+  }
+
+  .banner-particales-image {
+    max-width: 214px;
+  }
+
+  .about-card {
+    max-width: 289px;
+  }
+
+  .card {
+    padding: 43px 17px 35px;
+  }
+
+  .card img {
+    width: 87px;
+    margin-bottom: 18px;
+    margin-left: 10px;
+  }
+}
+
+
